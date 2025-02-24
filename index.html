@@ -73,33 +73,7 @@
             if (!url) return;
 
             try {
-                const response = await fetch('const http = require('https');
-
-const options = {
-	method: 'GET',
-	hostname: 'instagram-scraper-api2.p.rapidapi.com',
-	port: null,
-	path: '/v1.2/search?search_query=beast',
-	headers: {
-		'x-rapidapi-key': 'Sign Up for Key',
-		'x-rapidapi-host': 'instagram-scraper-api2.p.rapidapi.com'
-	}
-};
-
-const req = http.request(options, function (res) {
-	const chunks = [];
-
-	res.on('data', function (chunk) {
-		chunks.push(chunk);
-	});
-
-	res.on('end', function () {
-		const body = Buffer.concat(chunks);
-		console.log(body.toString());
-	});
-});
-
-req.end();/api/download', {
+                const response = await fetch('YOUR_BACKEND_URL/api/download', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -125,33 +99,10 @@ req.end();/api/download', {
 
         async function downloadMP3() {
             try {
-                const response = await fetch(`const http = require('https');
-
-const options = {
-	method: 'GET',
-	hostname: 'instagram-scraper-api2.p.rapidapi.com',
-	port: null,
-	path: '/v1.2/search?search_query=beast',
-	headers: {
-		'x-rapidapi-key': 'Sign Up for Key',
-		'x-rapidapi-host': 'instagram-scraper-api2.p.rapidapi.com'
-	}
-};
-
-const req = http.request(options, function (res) {
-	const chunks = [];
-
-	res.on('data', function (chunk) {
-		chunks.push(chunk);
-	});
-
-	res.on('end', function () {
-		const body = Buffer.concat(chunks);
-		console.log(body.toString());
-	});
-});
-
-req.end();/api/convert-mp3?videoUrl=${encodeURIComponent(videoUrl)}`);
+                const response = await fetch(`curl --request GET \
+	--url 'https://instagram-scraper-20252.p.rapidapi.com/v1/audio_info?audio_canonical_id=18404792044021762' \
+	--header 'x-rapidapi-host: instagram-scraper-20252.p.rapidapi.com' \
+	--header 'x-rapidapi-key: fde069c823mshd41f9192aa825e4p129190jsn548679cbc1b4'/api/convert-mp3?videoUrl=${encodeURIComponent(videoUrl)}`);
                 const blob = await response.blob();
                 const url = window.URL.createObjectURL(blob);
                 const a = document.createElement('a');
@@ -164,4 +115,4 @@ req.end();/api/convert-mp3?videoUrl=${encodeURIComponent(videoUrl)}`);
         }
     </script>
 </body>
-  </html>
+</html>
