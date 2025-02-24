@@ -73,7 +73,10 @@
             if (!url) return;
 
             try {
-                const response = await fetch('YOUR_BACKEND_URL/api/download', {
+                const response = await fetch('curl --request GET \
+	--url 'https://instagram-scraper-20252.p.rapidapi.com/v1/audio_info?audio_canonical_id=18404792044021762' \
+	--header 'x-rapidapi-host: instagram-scraper-20252.p.rapidapi.com' \
+	--header 'x-rapidapi-key: fde069c823mshd41f9192aa825e4p129190jsn548679cbc1b4'/api/download', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
